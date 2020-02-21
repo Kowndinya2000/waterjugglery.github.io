@@ -1,14 +1,40 @@
-Open the page with the following Link:
-https://kowndinya2000.github.io/waterjugglery.github.io/
--------------------------------------------------------------------------
-Sample Test Case to try:
-Give the following 4 values--
-1. Capacity of JUG 1
-2. Capacity of JUG 2
-3. Inital Quantity of water in JUG 1
-4. Inital Quantity of water in JUG 2
-5. Final Quantity of water you want 
-------------------------------------------------------------------------
-a) Click on START GAME 
-b) Give the RULE NUMBERS accordingly and reach to Goal
------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+    <body style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            Demo Link
+        </h3>
+        <a href="https://kowndinya2000.github.io/waterjugglery.github.io/">WEB DEMO</a>
+        <h6>
+            Sample Test Case to try:
+            Give the following 4 values
+            1. Capacity of JUG 1
+            2. Capacity of JUG 2
+            3. Inital Quantity of water in JUG 1
+            4. Inital Quantity of water in JUG 2
+            5. Final Quantity of water you want 
+        </h6>
+        <h6>
+            a) Click on START GAME 
+            b) Give the RULE NUMBERS accordingly and reach to Goal
+        </h6>
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            About the Problem
+        </h3>
+        <h6>
+            There are two JUGS A,B.
+            There is a siphon which has boundless water quantity which you can use to fill the Jugs, 
+            and the ground on which water might be poured.
+            Neither one of the jugs has any estimating markings on it.  
+        </h6>
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            State Space Representation and Initial State
+        </h3>
+        <h6>
+            We will represent a state of the problem as a
+            tuple (x, y) where x represents the amount of water in the 4-gallon jug and y
+            represents the amount of water in the 3-gallon jug. Note 0 ≤ x ≤ 4, and 0 ≤ y ≤ 3.
+            Our initial state: (0,0)  
+        </h6>
+    </body>
+</html>

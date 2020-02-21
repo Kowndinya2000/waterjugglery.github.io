@@ -33,8 +33,8 @@
             Neither one of the jugs has any estimating markings on it.  
         </h6>
         <h3 style="color: #456FFF;">RULES</h3>
-        <h6>1. Fill JUG A</h6>
-        <h6>2. Fill JUG B</h6>
+        <h6>1. Fill JUG A to it's full capacity</h6>
+        <h6>2. Fill JUG B to it's full capacity</h6>
         <h6>3. Empty JUG A (pour water onto ground)</h6>
         <h6>4. Empty JUG B (pour water onto ground)</h6>
         <h6>5. Pour Water from JUG B to fill JUG A</h6>
@@ -45,10 +45,42 @@
             State Space Representation and Initial State
         </h3>
         <h6>
-            We will represent a state of the problem as a
-            tuple (x, y) where x represents the amount of water in the 4-gallon jug and y
-            represents the amount of water in the 3-gallon jug. Note 0 ≤ x ≤ 4, and 0 ≤ y ≤ 3.
-            Our initial state: (0,0)  
+            The state of the problem is represented as a
+            tuple (a, b) where a represents the amount of water in the jug1 (Let's say 5 gallons) and b (Let's say 3 gallons)
+            represents the amount of water in the jug2. 
+            Initial state can be a = 0, b = 0.  
+        </h6>
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            Goal
+        </h3>
+        <h6>
+            State  = (4,b) where 0 &lt;= b =&gt; 3
+        </h6>
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            Operators
+        </h3>
+        <h6>
+1. Fill JUG A to it's full capacity (a,b), a &lt; 5 &#8594; (5,b)<br>
+2. Fill JUG B to it's full capacity (a,b), b &lt; 3 &#8594; (a,3)<br>
+3. Empty JUG A on ground (a,b), a &gt; 0 &#8594; (0,b)<br>
+4. Empty JUG B on ground (a,b), b &gt; 0 &#8594; (a,0)<br>
+5. Pour Water from JUG B to fill JUG A (a,b), 0 &lt; a+b &gt;= 5 and b &gt; 0 &#8594; (5,b-(5-a))<br> 
+6. Pour Water from JUG A to fill JUG B (a,b), 0 &lt; a+b &gt;= 3 and a &gt; 0 &#8594; (a-(3-b),3)<br>
+7. Pour all of water from Jug B into Jug A (a,b), 0 &lt; a+b &lt;= 5 and b &gt;= 0    &#8594; (a+b,0)<br>
+8. Pour all of water from Jug A into Jug B (a,b), 0 &lt; a+b &lt;= 3 and a &gt;= 0    &#8594; (0,a+b)<br>
+        </h6>
+        <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            Solution
+        </h3>
+        <h6>
+Gallons in JUG A &nbsp; Gallons in JUG B &nbsp; Rule Applied<br>
+&nbsp;&nbsp;&nbsp; 0 &nbsp;&nbsp;&nbsp; 0 &nbsp;&nbsp;&nbsp; 1<br>
+&nbsp;&nbsp;&nbsp; 5 &nbsp;&nbsp;&nbsp; 0 &nbsp;&nbsp;&nbsp; 6<br>
+&nbsp;&nbsp;&nbsp; 2 &nbsp;&nbsp;&nbsp; 3 &nbsp;&nbsp;&nbsp; 4<br>
+&nbsp;&nbsp;&nbsp; 2 &nbsp;&nbsp;&nbsp; 0 &nbsp;&nbsp;&nbsp; 8<br>
+&nbsp;&nbsp;&nbsp; 0 &nbsp;&nbsp;&nbsp; 2 &nbsp;&nbsp;&nbsp; 1<br>
+&nbsp;&nbsp;&nbsp; 5 &nbsp;&nbsp;&nbsp; 2 &nbsp;&nbsp;&nbsp; 6<br>
+&nbsp;&nbsp;&nbsp; 4 &nbsp;&nbsp;&nbsp; 3 &nbsp;&nbsp;&nbsp; Goal Reached<br>
         </h6>
     </body>
 </html>

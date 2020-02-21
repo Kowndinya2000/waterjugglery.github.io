@@ -394,9 +394,14 @@
     
     </form>
     <button class="button" style="vertical-align:middle;" onclick="f1()"><span>START GAME</span></button>
-    <p id="dynamic" style="display: none;font-size: 1.5rem;">
-      Enter Rule Number <input type="number" id="rule">
-  </div>
+
+      <form>
+        <p class="field email-box" id="dynamic" style="display: none;">
+          <input type="text" id="rule" placeholder="Rule Number you want to apply">
+          <label for="email">RULE NUMBER</label>
+          <span class="ss-icon" style="opacity: 0;"></span>
+        </p>
+      </form>
     <script>
         function f1()
         {
@@ -429,7 +434,7 @@
     </div>
     <p id="curr" style="color: #456FFF;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 1.5rem;"></p>
 
-    <button onclick="f2()" class="button" style="display: none;" id="bf2">Process Next</button>
+    <button onclick="f2()" class="button" style="display: none;vertical-align: middle;" id="bf2">Process Next</button>
     <script>
         function f2()
         {

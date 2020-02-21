@@ -1,18 +1,28 @@
 var x;
-    var y;
-    var v;
-    var t;
-    var final;
-    
+var y;
+var v;
+var t;
+var final;
+var path = require('path')
+var cors = require('cors')  
 var app = require("express")()
-var bodyParser = require("body-parser")
+app.use(express.static(path.join(__dirname, 'public')))
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+app.use(cors({
+      credentials: true,
+  }))
+var bodyParser = require("body-parser")
 app.get("/", function (req, res, next) {
     res.render("home2.ejs", { message: "" });
+    res.header('Acess-Control-Allow-Credentials','true')
+    res.header('Access-Control-Allow-Origin', '*');
 });
 
 app.post("/jugglerywater", function (req, res, next) {
+    req.header('Access-Control-Allow-Origin', '*');
     var str = req.body.link;
     console.log(str)
     var send_str
@@ -127,8 +137,4 @@ app.post("/jugglerywater", function (req, res, next) {
     }
     res.json({ message: send_str });
 })
-app.listen(5772, function (err) {
-    if (err) console.log(err);
-    else
-        console.log("server running at 5772");
-});
+.listen(PORT, () => console.log(`Listening on ${ PORT }`))

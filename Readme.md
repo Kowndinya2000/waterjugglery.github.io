@@ -4,7 +4,12 @@
         <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
             Demo Link
         </h3>
-        <a href="https://kowndinya2000.github.io/waterjugglery.github.io/">WEB DEMO</a>
+    <a href="https://kowndinya2000.github.io/waterjugglery.github.io/">WEB DEMO</a>
+       <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            WATER JUG PROBLEM SERVER CODE
+            (used express, node.js, ajax - xhttprequest, ejs)
+        </h3>
+    <a href="https://drive.google.com/file/d/1dqsOsPOBJInphEHflia2ZdFoevwB-ssD/view?usp=sharing">SEVER CODE LINK</a>   
         <h6>
             Sample Test Case to try:
             Give the following 4 values

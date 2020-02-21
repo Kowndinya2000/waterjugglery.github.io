@@ -27,6 +27,15 @@
             and the ground on which water might be poured.
             Neither one of the jugs has any estimating markings on it.  
         </h6>
+        <h3 style="color: #456FFF;">RULES</h3>
+        <h6>1. Fill JUG A</h6>
+        <h6>2. Fill JUG B</h6>
+        <h6>3. Empty JUG A (pour water onto ground)</h6>
+        <h6>4. Empty JUG B (pour water onto ground)</h6>
+        <h6>5. Pour Water from JUG B to fill JUG A</h6>
+        <h6>6. Pour Water from JUG A to fill JUG B</h6>
+        <h6>7. Pour all of water from Jug B into Jug A</h6>
+        <h6>8. Pour all of water from Jug A into Jug B</h6>
         <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
             State Space Representation and Initial State
         </h3>

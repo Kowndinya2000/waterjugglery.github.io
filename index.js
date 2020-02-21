@@ -3,25 +3,26 @@ var y;
 var v;
 var t;
 var final;
+var express = require('express')
 var path = require('path')
-var cors = require('cors')  
-var app = require("express")()
-app.use(express.static(path.join(__dirname, 'public')))
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'ejs')
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
-app.use(cors({
+var PORT = process.env.PORT || 5000
+var bodyParser = require("body-parser")
+var cors = require('cors')
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .use(bodyParser.urlencoded({ extended: false }))
+  .use(bodyParser.json())
+  .use(cors({
       credentials: true,
   }))
-var bodyParser = require("body-parser")
-app.get("/", function (req, res, next) {
+.get("/", function (req, res, next) {
     res.render("pages/index", { message: "" });
     res.header('Acess-Control-Allow-Credentials','true')
     res.header('Access-Control-Allow-Origin', '*');
-});
-
-app.post("/jugglerywater", function (req, res, next) {
+})
+.post("/", function (req, res, next) {
     req.header('Access-Control-Allow-Origin', '*');
     var str = req.body.link;
     console.log(str)

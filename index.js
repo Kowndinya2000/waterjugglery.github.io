@@ -16,7 +16,7 @@ app.use(cors({
   }))
 var bodyParser = require("body-parser")
 app.get("/", function (req, res, next) {
-    res.render("home2.ejs", { message: "" });
+    res.render("pages/index", { message: "" });
     res.header('Acess-Control-Allow-Credentials','true')
     res.header('Access-Control-Allow-Origin', '*');
 });

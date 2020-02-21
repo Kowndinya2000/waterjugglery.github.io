@@ -54,11 +54,7 @@
             Goal
         </h3>
         <h6>
-<<<<<<< HEAD
             State  = (4,b) where 0 &lt;= b &gt;= 3
-=======
-            State  = (4,b) where 0 &lt;= b =&gt; 3
->>>>>>> 166b6bd6ecf9f22c3fe45cd5541472ff1a39ec3f
         </h6>
         <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
             Operators

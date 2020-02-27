@@ -54,7 +54,7 @@
             Goal
         </h3>
         <h6>
-            State  = (4,b) where 0 &lt;= b &gt;= 3
+            State  = (4,b) where 0 &lt;= b &lt;= 3
         </h6>
         <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
             Operators

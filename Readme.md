@@ -13,11 +13,11 @@
         <h6>
             Sample Test Case to try:
             Give the following 4 values
-            1. Capacity of JUG 1
-            2. Capacity of JUG 2
-            3. Inital Quantity of water in JUG 1
-            4. Inital Quantity of water in JUG 2
-            5. Final Quantity of water you want 
+            1) Capacity of JUG 1 <br>
+            2) Capacity of JUG 2 <br>
+            3) Inital Quantity of water in JUG 1 <br>
+            4) Inital Quantity of water in JUG 2 <br>
+            5) Final Quantity of water you want <br>
         </h6>
         <h6>
             a) Click on START GAME 

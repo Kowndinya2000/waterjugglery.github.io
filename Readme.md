@@ -12,7 +12,7 @@
     <a href="https://drive.google.com/file/d/1dqsOsPOBJInphEHflia2ZdFoevwB-ssD/view?usp=sharing">SEVER CODE LINK</a>   
         <h6>
             Sample Test Case to try:
-            Give the following 4 values
+            Give the following 4 values <br>
             1) Capacity of JUG 1 <br>
             2) Capacity of JUG 2 <br>
             3) Inital Quantity of water in JUG 1 <br>
